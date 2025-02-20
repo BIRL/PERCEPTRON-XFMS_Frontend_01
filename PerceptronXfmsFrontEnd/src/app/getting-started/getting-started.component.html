@@ -1,0 +1,104 @@
+<div id="top" style="width:90%; min-width: 900px; margin:0 auto;">
+    <mat-card>
+        <h4 style="text-align:center;font-family: Roboto, Arial, sans-serif; font-weight:bold; margin:0 auto;">Getting
+            Started</h4>
+    </mat-card>
+    <div style="height:10px;font-size:1px;">&nbsp;</div>
+
+    <mat-card>
+        <div style="height:10px;font-size:1px;">&nbsp;</div>
+        <h5 style="padding-left:0px; font-size:21px; font-weight:bold; font-family: roboto, arial, sans-serif;">
+            Steps
+        </h5>
+        <p>Login PERCEPTRON-XFMS as a guest (without user account) or register for PERCETRON-XFMS user account to login
+            using an existing email account.</p>
+        <h5 class="header">Step 1 – Input Parameters</h5><a href="assets/images/step_1a.png" class="to_right"
+            download="step1"><i class="material-icons" style="vertical-align: text-bottom;">save_alt</i></a>
+        <ul>
+            <li>Go to the ‘XFMS Search Query’ in the menu on left and enter ‘XFMS Search Title’ to start data analysis.
+            </li>
+            <li>Browse for the zipped folder containing following input data files:
+                <ul>
+                    <dd><b>-</b> Protein sequence file in standard .fasta<span style="font-size:15px; font-weight: bold; color: red">* **</span> format.</dd>
+                    <dd><b>-</b> Protein structure file in standard .pdb<span style="font-size:15px; font-weight: bold; color: red">**</span>  format.</dd>
+                    <dd><b>-</b> Mascot file in .xlsx format.</dd>
+                    <dd><b>-</b> SASA<span style="font-size:15px; font-weight: bold; color: red">**</span> file in ‘.xlsx’ format.</dd>
+                    <dd><b>-</b> DoseResposeInfo.txt files that contain the information regarding the X-ray doses used in
+                        experimental protocol.</dd>
+                </ul>
+            </li>
+        </ul>
+        <label style="font-size:14px; color: red"><span style="font-size:15px; font-weight: bold;">*</span> Fasta file should be into the Uniport format</label>
+        <label style="font-size:14px; color: red"><span style="font-size:15px; font-weight: bold;">**</span> Fasta, PDB, and SASA files must have same residue information.</label>
+        <a style="margin-top:20px; font-size:14px; font-weight:700; color: red">Note:</a> <a
+            style="font-size:14px; color:red">Users logging in via Guest Account can provide email address to receive
+            results on
+            Email ID upon search completion.</a>
+
+
+            <img id="get1" src="assets/images/step_1a.png" width="70%" class="center">
+            <hr>
+            <div style="height:10px;font-size:1px;"></div>
+        <h5 class="header">Step 2 – Upload Experimental Data</h5>
+        <a href="assets/images/step_1b.png" class="to_right" download="step1b"><i class="material-icons"
+            style="vertical-align: text-bottom;">save_alt</i></a>
+
+        <ul>
+            <li>For Replicate<span style="font-size:15px; font-weight: bold; color: red">*</span> 1: Browse for the folder containing Agilent LC-MS “.d” data files or .mzXML files . Add a
+                zipped
+                folder with multiple files (zipped .d or .mzXML files) of a single protein to search.</li>
+
+            <li>Repeat the same step for Replicate 2 and Replicate 3.</li>
+
+        </ul>
+        PERCEPTRON-XFMS requires three replicates for each sample data. Names of “*.d” files
+        or “*.mzXML” files must strictly follow the same naming structure i.e., “Dose0.d”, “Dose10.d” or “Dose0.mzXML”
+        etc.
+<br>
+<label style="font-size:14px; color: red"><span style="font-size:15px; font-weight: bold;">*</span> For optimal results please use atleast 5 doses for each replicate.</label>
+
+        <a style="margin-top:20px; font-size:14px; font-weight:700; color: red">Note:</a> <a
+            style="font-size:14px; color:red">Please do not refresh the page or close the tab in middle of data uploading.</a>
+
+       
+        <!-- <img id="get1" src="assets/images/down.png" class="center"> -->
+        <div style="height:10px;font-size:1px;"></div>
+        <img id="get1" src="assets/images/step_1b.png" width="70%" class="center">
+        <div style="height:10px;font-size:1px;"></div>
+        <hr>
+        <div style="height:10px;font-size:1px;"></div>
+
+
+        <h5 class="header">Step 3 – Protein-Water Contacts Analyses</h5>
+        <a href="assets/images/step_2.png" class="to_right" download="step2"><i class="material-icons"
+                style="vertical-align: text-bottom;">save_alt</i></a>
+                
+        <ul>
+            <li>In order to analyze protein-water hydrogen bond graphs click the ‘Bridge Algorithm’ box.</li>
+            <li>Click on ‘Frustratometer Algorithm’ box for additional analysis of protein residue energetics.</li>
+        </ul>
+        <img id="get2" src="assets/images/step_2.png" width="70%;" class="center">
+        <div style="height:10px;font-size:1px;"></div>
+        <p>Submit the Query Search by clicking on ‘Submit’ button.</p>
+        <hr>
+
+        <h5 class="header">Naming Convention</h5>
+        <a href="assets/images/DoseResponseInfo.png" class="to_right" download="DoseResponseInfo.png"><i class="material-icons"
+            style="vertical-align: text-bottom;">save_alt</i></a>
+        <p>
+           User must follow the naming convention as provided into the <a routerLink="/repository">sample data</a>. This naming convention must also be followed in the DoseResposeInfo.txt files. Furthermore, for inputing the three replicates for each experimental data. Names of  “.d” or “.mzXML” files must also follow the same naming structure i.e., “Dose0.d”, “Dose10.d” or “Dose0.mzXML”, “Dose10.mzXML” etc. 
+        </p>
+        <!-- <a href="https://perceptronxfms.lums.edu.pk/index.html#/repository"> -->
+
+        <img id="get1" src="assets/images/DoseResponseInfo.png" width="35%" class="center">
+
+
+
+        <div style="height:10px;font-size:1px;">&nbsp;</div>
+
+        <hr>
+        <p style="color:black">For help with interpreting search results, please visit <u><a style="font-style:italic"
+            routerLink="/help">here</a></u>.</p>
+
+    </mat-card>
+</div>

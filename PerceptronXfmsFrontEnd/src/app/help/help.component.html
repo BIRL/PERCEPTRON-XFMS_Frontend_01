@@ -1,0 +1,180 @@
+<div id="top" style="width:90%; min-width: 900px; margin:0 auto;">
+    <mat-card>
+        <label
+            style="text-align:center; font-size: 23px; font-family: Roboto, Arial, sans-serif; font-weight:bold; margin:0 auto;">Help
+            & Manual</label>
+    </mat-card>
+    <div style="height:10px;font-size:1px;">&nbsp;</div>
+
+    <mat-card>
+        <p style="font-size:20px; font-weight:600">Interpretating Search Results</p>
+
+        <ol>
+            <li style="margin-top:20px; margin-bottom:20px">‘User Search History’ in ‘Search Results and History’ tab
+                shows search results with ‘Search Title’. User can visualize the results its analysis by clicking the
+                corresponding ‘Search Title’ row.</li>
+            <div style="text-align:center"><img src="assets/images/help01.png" width="70%;"></div>
+            <hr>
+
+            <li style="margin-top:20px">User can download results by clicking <span
+                    style="font-weight: bold; color: red;">‘Results Download’</span> button option provided on top
+                right. The results will be downloaded as a *.zip file.</li>
+            <div style="text-align:center"><img src="assets/images/help02.png" width="70%;"></div>
+
+
+            <br>
+            <p style="font-size:20px; font-weight:bold">Downloadable Result Files</p>
+            <ul>
+                <li style="margin-top:20px; margin-bottom: 20px;"> Downloaded result (*.zip) file contains multiple
+                    following sub folders and files.</li>
+                <dd><b>-</b> A number of sub folders corresponding to different peptides in the protein and each folder
+                    contains given below set of information:</dd>
+                <ul>
+                    <dd><b>a)</b> Subfolders containing rate of oxidation for individual replicate.</dd>
+                    <dd><b>b)</b> Dose response plots of rate of oxidation.</dd>
+                    <dd><b>c)</b> <b>Mean_R1_R2_R3.xls</b> file contains the mean values of (1 - Rate of oxidation) for
+                        each modified residue reported in that peptide.</dd>
+                </ul>
+                <dd><b>-</b><b> PeptideInfo.xls</b> file which includes information regarding the peptide sequence and
+                    their corresponding peptide folder.</dd>
+                <dd><b>-</b><b> PF_SASA_tab.xls</b> a table that contains log Protection factor of each modified
+                    residue.</dd>
+                <dd><b>-</b><b> SASAmain.png</b> a graphical representation of the protection factor data with SASA
+                    values on x-axis and log (PF) on y-axis. </dd>
+                <dd><b>-</b><b> Modified.pdb</b> a pdb file incorporated with log(PF) values.</dd>
+                <dd><b>-</b><b> ResultsBridge.xlsx</b> an excel file that contains centrality scores of the residues
+                    using Bridge algorithm.</dd>
+
+                <dd><b>-</b><b> frustratometeR_Results</b> include images that quantifies the degree of local
+                    frustration in a given
+                    protein. User also get tables with the calculated Frustration indexes and scripts to locally explore
+                    and manipulate
+                    the structures.</dd>
+            </ul>
+            <hr>
+
+            <li>User can visualize the Search query Parameters by clicking the ‘XFMS Search Query Parameters’.</li>
+            <div style="text-align:center"><img src="assets/images/help_XfmsSearchQueryParameters.png" width="70%;">
+            </div>
+
+
+            <hr>
+            <li style="margin-top:20px; margin-bottom:20px">User can visualize XFMS results by clicking the <span
+                    style="font-weight: bold; color: red;">‘Results’</span> button in ‘Protection Factor’.</li>
+            <div style="text-align:center"><img src="assets/images/help_PF_Results_Button.png" width="70%;"></div>
+
+
+            <ul>
+
+                <li style="margin-top:20px; margin-bottom:20px">‘Detailed Protection Factor Results’ shows protein
+                    information, solvent accessibility graph, and the protection factor table shows the anomalous
+                    residues and their solvent accessibility.</li>
+
+
+
+            </ul>
+            <div style="text-align:center"><img src="assets/images/help_04a.png" width="70%;"></div>
+            <hr>
+            <li style="margin-top:20px; margin-bottom:20px">Protein Information includes the name of the protein,
+                organism name, gene name and number of amino acids in the protein followed by its sequence.</li>
+            <div style="text-align:center"><img src="assets/images/help_04b.png" width="70%;"></div>
+            <hr>
+
+
+            <li style="margin-top:20px; margin-bottom:20px">The graph contains SASA values on x-axis and log (PF) on
+                y-axis.</li>
+            <div style="text-align:center"><img src="assets/images/help_04c.png" width="40%;"></div>
+            <hr>
+
+
+            <li style="margin-top:20px; margin-bottom:20px">‘Residue Based Solvent Accessible Surface Area & Log
+                (Protection Factor)’ shows the details of the anomalous residues. The table shows Residue position,
+                residue name their SASA value and log (PF) scores. </li>
+            <div style="text-align:center"><img src="assets/images/help_04d.png" width="70%;"></div>
+            <hr>
+
+
+
+            <li style="margin-top:20px; margin-bottom:20px"> In ‘Betweeness Centrality’ tab by clicking the <span
+                    style="font-weight: bold; color: red;">‘Results’</span> button, user can visualize the centrality
+                scores of important residues identified by using Bridge Algorithm.</li>
+            <div style="text-align:center"><img src="assets/images/help_05.png" width="70%;"></div>
+
+            <ul>
+                <li style="margin-top:20px; margin-bottom:20px">‘Detailed Betweenness Centrality Results’ shows protein information as well as important hydrogen bonded residues and their degree centrality and betweenness centrality scores.</li>
+                <div style="text-align:center"><img src="assets/images/help_05a.png" width="70%;"></div>
+            </ul>
+
+
+            <ul>
+                <li style="margin-top:20px; margin-bottom:20px">Protein Information includes the name of the protein,
+                    organism name, gene name and number of amino acids in the protein followed by its sequence.</li>
+                <div style="text-align:center"><img src="assets/images/help_04b.png" width="70%;"></div>
+            </ul>
+
+
+            <ul>
+                <li style="margin-top:20px; margin-bottom:20px">The table shows the name and position of important
+                    hydrogen
+                    bonded residues and their degree centrality and betweenness centrality scores.</li>
+                <div style="text-align:center"><img src="assets/images/help_05b.png" width="70%;"></div>
+            </ul>
+
+            <hr>
+            
+
+
+
+
+            <li style="margin-top:20px; margin-bottom:20px"> In ‘Degree of Frustration’ tab by clicking the <span
+                style="font-weight: bold; color: red;">‘Results’</span> button, user can visualize the locally frustrated contacts calculated by analyzing energy distribution using frustratometeR algorithm.</li>
+        <div style="text-align:center"><img src="assets/images/help_06.png" width="70%;"></div>
+
+        <ul>
+            <li style="margin-top:20px; margin-bottom:20px">‘Detailed Frustration Results’ include degree of frustration in each class, contacts density in sequence space and frustration contact map.</li>
+            <div style="text-align:center"><img src="assets/images/help_06a.png" width="70%;"></div>
+        </ul>
+
+        <ul>
+            <li style="margin-top:20px; margin-bottom:20px">Protein Information includes the name of the protein,
+                organism name, gene name and number of amino acids in the protein followed by its sequence.</li>
+            <div style="text-align:center"><img src="assets/images/help_04b.png" width="70%;"></div>
+        </ul>
+
+
+
+        <ul>
+            <li style="margin-top:20px; margin-bottom:20px">‘Fraction Of Contacts In Each Frustration Class’ represents the frustration density. The x-axis represents the residue position in sequence and y-axis represents the density of frustration. Green color represents minimally frustrated and red represents highly frustrated.</li>
+            <div style="text-align:center"><img src="assets/images/help_06b.png" width="70%;"></div>
+        </ul>
+
+        <ul>
+            <li style="margin-top:20px; margin-bottom:20px">‘Density Of Contacts In Sequence Space’ shows the frustration in sequence. The x-axis represents the residue position in sequence and y-axis represents the local frustration density.</li>
+            <div style="text-align:center"><img src="assets/images/help_06c.png" width="70%;"></div>
+        </ul>
+
+
+        <ul>
+            <li style="margin-top:20px; margin-bottom:20px">‘Frustration Contact Map’ represents the local frustration in contacts. The frustration index measures how favorable a particular contact is relative to the set of all possible contacts in that location. Green color represents minimally frustrated and red represents highly frustrated.</li>
+            <div style="text-align:center"><img src="assets/images/help_06d.png" width="70%;"></div>
+        </ul>
+
+
+
+
+
+        </ol>
+
+    </mat-card>
+    <div style="height:10px; font-size:1px;">&nbsp;</div>
+    <mat-card>
+        <!-- <div style="height:10px;font-size:1px;">&nbsp;</div> -->
+        <p style="font-size:16px;">For more information on using PERCEPTRON-XFMS, please refer to our <u><a
+                    style="font-style:italic" href="https://perceptronxfms.lums.edu.pk/index.html#/youtube">video
+                    tutorials</a></u> or visit
+            <u><a style="font-style:italic"
+                    href="https://github.com/BIRL/PERCEPTRON-XFMS_v1.0.0.0/tree/main/Documentation">here</a></u> to
+            download user manual and step by step guide.
+        </p>
+    </mat-card>
+</div>

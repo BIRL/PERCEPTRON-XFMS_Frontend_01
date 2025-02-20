@@ -1,0 +1,90 @@
+<div id="top" style="width:92%;  margin:0 auto;">
+    <mat-card style="height: 100%">
+        <label
+            style="text-align:center; font-size: 25px; font-family: Roboto, Arial, sans-serif; font-weight:bold; margin:0 auto;">PERCEPTRON-XFMS:
+            A Web Server for X-ray Foot Printing with Mass Spectrometry (XFMS) Data Analysis</label>
+    </mat-card>
+    <div style="height: 10px;"></div>
+
+    <mat-card style="height: 100%">
+        <label
+            style="text-align:center; font-size: 22px; font-family: Roboto, Arial, sans-serif; font-weight:bold; margin:0 auto;">Welcome
+            to PERCEPTON-XFMS!</label>
+
+        <p style="font-size: 18px; text-align:left"
+            class="float_text_right; font-size:18px; letter-spacing:0px; font-weight:500; font-family: Roboto, Arial, sans-serif;">
+            <!-- X-ray Foot Printing with Mass Spectrometry (XFMS) is an essential tool for analysis of protein structure and
+            conformational changes by employing solvent accessibility of covalently modified residues. PERCEPTRON-XFMS searches and quantifies hydroxyl modified residues and is available, freely, online. -->
+           
+            X-ray Foot Printing with Mass Spectrometry (XFMS) is a powerful approach for analysis of protein structure, interactions, folding  and conformational changes <a href="https://pubs.acs.org/doi/10.1021/ac200567u">(Wang and Chance 2011)</a>. It employs solvent accessibility of covalently modified residues and reactivity rate to calculate protection factors <a href="https://pubmed.ncbi.nlm.nih.gov/25564857/">(Huang et al. 2015)</a>. Comparison of reactivity rates among protein states provides insights into structural changes, which is later used to construct protein functional and dynamical structure models <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5006651/">(Gupta et al. 2016)</a>. Here, we present PERCEPTRON-XFMS, a web-based platform to search and quantify hydroxyl modified residues and  to calculate their protection factors along with centrality scores and local frustration. PERCEPTRON-XFMS is freely available, online.
+
+            <br><br>
+            PERCEPTRON-XFMS web server brings together algorithms for:<br>
+            <b>(i)</b> Extraction and quantification of oxidation for modified residues. <br><b>(ii)</b> Computation of
+            dose response curves for each residue. <br><b>(iii)</b> Calculation of residue protection factors for
+            modified residues.<br><b>(iv)</b> Centrality scores and local protein frustration density calculation.<br>
+        </p>
+
+
+        <p style="font-size: 18px; text-align:center"
+            class="float_text_right; font-size:18px; letter-spacing:0px; font-weight:500; font-family: Roboto, Arial, sans-serif;">
+            <img src="assets/images/WebStrikingImage.jpg" width="55%">
+
+        </p>
+
+
+        <div style="height: 20px;"></div>
+        <p style="font-size: 18px; text-align:left"
+            class="float_text_right; font-size:18px; letter-spacing:0px; font-weight:500; font-family: Roboto, Arial, sans-serif;">
+            To support high-throughput data analysis, PERCEPTRON-XFMS is deployed at a high-performance computing
+            cluster. The front-end and middle-ware is implemented in <a href="https://angular.io"><b>ANGULAR
+                    frameworks</b></a> and <a href="https://dotnet.microsoft.com/apps/aspnet"><b>Microsoft
+                    ASP.NET</b></a>, respectively. The search results include dose response plots, PDB files with
+            protection factor, and centrality scores. This information can be visualized as well as downloaded.
+
+            With these features, the PERCEPTRON-XFMS web platform aims to address the lack of open-source and
+            open-architecture platforms for XFMS data analysis.
+        </p>
+
+        <p style="font-size: 18px; text-align:center"
+            class="float_text_right; font-size:18px; letter-spacing:0px; font-weight:500; font-family: Roboto, Arial, sans-serif;">
+            <img src="assets/images/Web Architecture.jpg" width="55%" />
+        </p>
+    </mat-card>
+
+    <div style="height: 20px;"></div>
+
+    <mat-card style = "height: 100%">
+        <label style="text-align:center; font-size: 25px; font-family: Roboto, Arial, sans-serif; font-weight:bold; margin:0 auto;">PERCEPTRON-XFMS: Browser Compatibility*</label>
+        
+        <label style="text-align:left; color: red; font-size: 14px; font-family: Roboto, Arial, sans-serif; font-weight:bold; margin:0 auto;">* For best resolution, please use 1280x1024.</label>
+                <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                        
+                        <ng-container matColumnDef="BrowserName">
+                          <mat-header-cell *matHeaderCellDef>  </mat-header-cell>
+                          <mat-cell *matCellDef="let element" style="font-size: 16px; font-weight:bold"> {{element.BrowserName}} </mat-cell>
+                        </ng-container>
+    
+                        <ng-container matColumnDef="OSWindow">
+                          <mat-header-cell *matHeaderCellDef style="color: rgb(20, 20, 20); font-size: 16px; font-weight:bold"> Windows </mat-header-cell>
+                          <mat-cell *matCellDef="let element"> {{element.OSWindow}} </mat-cell>
+                        </ng-container>
+                                       
+                        <ng-container matColumnDef="OSLinux">
+                          <mat-header-cell *matHeaderCellDef style="color: rgb(20, 20, 20); font-size: 16px; font-weight:bold"> Linux(Ubuntu) </mat-header-cell>
+                          <mat-cell *matCellDef="let element"> {{element.OSLinux}} </mat-cell>
+                        </ng-container> 
+                        
+                        <ng-container matColumnDef="OSMac">
+                          <mat-header-cell *matHeaderCellDef style="color: rgb(20, 20, 20); font-size: 16px; font-weight:bold"> Mac </mat-header-cell>
+                          <mat-cell *matCellDef="let element"> {{element.OSMac}} </mat-cell>
+                        </ng-container>
+                      
+                        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+                      </mat-table>
+                    </mat-card>
+
+
+
+</div>

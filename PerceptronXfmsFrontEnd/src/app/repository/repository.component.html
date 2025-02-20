@@ -1,0 +1,146 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value);" (ngReset)="onReset(); f.reset() ;" class="ui form">
+
+    <div id="top" style="width:90%; min-width: 600px; margin:0 auto;">
+        <mat-card>
+            <h4 style="text-align:center; font-family: Roboto, Arial, sans-serif; font-weight:bold; margin:0 auto;">
+                Sample Data</h4>
+        </mat-card>
+        <div style="height:10px;font-size:1px;">&nbsp;</div>
+        <mat-card>
+
+            <div>
+                <label style="text-align:left; display:unset; font-size:20px; font-weight:bold; margin:0 auto;">Sample
+                    Dataset<font color="red">*</font> : CheY XFMS Analysis</label>
+            </div>
+            <p style="font-size: 15px;font-family: sans-serif;"> <b>Description:</b> XFMS was used to identify the anomalous behaving oxidized residues in bacterial CheY protein.</p>
+            <p style="font-size: 15px;font-family: sans-serif;"> <b>Publication:</b> M. Hamid, M. F. Khalid, S. U.
+                Chaudhary, and S. Khan, ‘The Solvation of the E. coli CheY Phosphorylation Site Mapped by XFMS’, Int J
+                Mol Sci, vol. 23, no. 21, p. 12771, Oct. 2022, doi: 10.3390/ijms232112771<a
+                    href="https://www.mdpi.com/1422-0067/23/21/12771"> [Link]</a></p>
+            <div>
+                <label style="text-align:left; display:unset; font-size:18px; font-weight:bold; margin:0 auto;">Sample
+                    Dataset in *.d format</label>
+                <a style="padding-left:10px" href="assets/DataFiles/Dfolders_CheY/Dfolders_CheY.zip"
+                    download="Dfolders_CheY.zip">Download All (zip)</a>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>File #.</td>
+                        <td>Dataset</td>
+                        <td>Download (Local Copy)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Replicate1.zip</td>
+                        <td><a href="assets/DataFiles/Dfolders_CheY/Replicate1.zip"
+                                download="Replicate1.zip">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Replicate2.zip</td>
+                        <td><a href="assets/DataFiles/Dfolders_CheY/Replicate2.zip"
+                                download="Replicate2.zip">Download</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Replicate3.zip</td>
+                        <td><a href="assets/DataFiles/Dfolders_CheY/Replicate3.zip"
+                                download="Replicate3.zip">Download</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div style="height:10px;font-size:1px;">&nbsp;</div>
+            <div>
+                <label style="text-align:left; display:unset; font-size:18px; font-weight:bold; margin:0 auto;">Sample
+                    Dataset in *.mzXML format</label>
+                <a style="padding-left:10px" href="assets/DataFiles/mzXML_CheY/mzXML_CheY.zip"
+                    download="mzXML_CheY.zip">Download All (zip)</a>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>File #.</td>
+                        <td>Dataset</td>
+                        <td>Download (Local Copy)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Replicate1.zip</td>
+                        <td><a href="assets/DataFiles/mzXML_CheY/Replicate1.zip" download="Replicate1.zip">Download</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Replicate2.zip</td>
+                        <td><a href="assets/DataFiles/mzXML_CheY/Replicate2.zip" download="Replicate2.zip">Download</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Replicate3.zip</td>
+                        <td><a href="assets/DataFiles/mzXML_CheY/Replicate3.zip" download="Replicate3.zip">Download</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div>
+                <label style="text-align:left; display:unset; font-size:18px; font-weight:bold; margin:0 auto;">Additional Input Files</label>
+                <!-- <a style="padding-left:10px" href="assets/DataFiles/AdditionalInputFiles/AdditionalInputFiles.zip"
+                    download="AdditionalInputFiles.zip">Download All (zip)</a> -->
+            </div>
+            <p style="font-size: 15px;font-family: sans-serif; color: red;"> For running the query, using sample dataset files, either with <i><b>‘Sample Dataset in *.d format’</b></i> or <i><b>‘Sample Dataset in *.mzXML format’</b></i>, below zipped files are required to submit with each query.</p>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td>File #.</td>
+                        <td>Input Files</td>
+                        <td>Download (Local Copy)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>AdditionalInputFiles.zip</td>
+                        <td><a href="assets/DataFiles/AdditionalInputFiles/AdditionalInputFiles.zip" download="AdditionalInputFiles.zip">Download</a>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>2</td>
+                        <td>Fasta.fasta</td>
+                        <td><a href="assets/DataFiles/AdditionalInputFiles/FASTA.fasta" download="Fasta.fasta">Download</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>PDB.pdb</td>
+                        <td><a href="assets/DataFiles/AdditionalInputFiles/PDB.pdb" download="PDB.pdb">Download</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mascot.xlsx</td>
+                        <td><a href="assets/DataFiles/AdditionalInputFiles/Mascot.xlsx" download="Mascot.xlsx">Download</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>SASA.xlsx</td>
+                        <td><a href="assets/DataFiles/AdditionalInputFiles/SASA.xlsx" download="SASA.xlsx">Download</a>
+                        </td>
+                    </tr> -->
+
+                </tbody>
+            </table>
+            <p style="font-size: 15px;font-family: sans-serif; color: red;"><i><b>* User should follow the naming convention as provided into <a routerLink="/repository">sample data</a>.</b></i></p>
+        </mat-card>
+    </div>

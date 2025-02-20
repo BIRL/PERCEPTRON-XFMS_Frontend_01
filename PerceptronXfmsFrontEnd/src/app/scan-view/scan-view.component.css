@@ -1,0 +1,62 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    
+  }
+  
+  .example-header {
+    min-height: 64px;
+    padding: 8px 24px 0;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .my{
+    font-size: 40px;
+  }
+
+  .mat-table {
+    overflow: auto;
+    max-height: 600px;
+  }
+
+  button {
+    background: #201a93;
+    color: white;
+    height: 10;
+    width: auto;
+    position: absolute;
+    right: 35px;
+  }
+/* 
+  .mat-grid-tile {
+    border: solid 2px #000;
+} */
+
+.example-card {
+  max-width: 300px;
+}
+
+.example-header-image {
+  background-size: cover;
+}
+.img-margin {
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-left: 0;
+
+}
+
+.mat-card-cvr{
+  width: 100%;
+  text-align:center;
+}
+
+.Results-btn-pos{
+  right: 105px;
+}
